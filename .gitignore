@@ -1,0 +1,15 @@
+# Secrets et environnement
+.env
+.venv/
+venv/
+
+# Caches
+__pycache__/
+.ipynb_checkpoints/
+
+# Anciennes versions et sauvegardes (non publiées)
+ancien/
+secours/
+
+# Généré par le notebook 4 (cellule %%writefile)
+serveur_megashop.py
