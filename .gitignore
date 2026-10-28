@@ -13,3 +13,6 @@ secours/
 
 # Généré par le notebook 4 (cellule %%writefile)
 serveur_megashop.py
+
+# Journal d'audit généré par le notebook 4
+journal_megashop.jsonl

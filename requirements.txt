@@ -4,6 +4,7 @@ openai>=1.60         # API OpenAI : chat, embeddings, sorties structurées, rech
 python-dotenv        # lit la clé OPENAI_API_KEY dans .env
 pydantic>=2          # validation des données et sorties structurées (notebooks 1 à 4)
 tiktoken             # démonstration des tokens (notebook 1)
+matplotlib           # graphiques des tokens (notebook 1)
 numpy                # calcul des similarités (notebook 3)
 langchain>=1.0       # create_agent et HumanInTheLoopMiddleware (notebooks 3 et 4)
 langchain-openai     # modèles OpenAI pour LangChain (notebooks 1 à 4)
