@@ -47,10 +47,19 @@ Le notebook 2 peut aussi tourner avec **Ollama** en local (`FOURNISSEUR = "ollam
 
 | Symptôme | Solution |
 |---|---|
-| `❌ Ajoute OPENAI_API_KEY=...` | Créer le fichier `.env` avec la clé, puis redémarrer le noyau |
+| `Ajoute OPENAI_API_KEY=...` | Créer le fichier `.env` avec la clé, puis redémarrer le noyau |
 | `ModuleNotFoundError: mcp.server.mcpserver` | Le SDK MCP installé est en version 1 : `pip install -U "mcp>=2,<3"` |
 | `Called get_config outside of a runnable context` | La pause humaine LangGraph en async demande Python 3.11 ou plus : garder `invoke` (et non `ainvoke`) avec Python 3.10 |
 | Une cellule du notebook 4 semble bloquée | Elle attend ta réponse `o` ou `n` dans le champ de saisie |
+
+## Schémas et icônes
+
+Le dossier `assets/` contient les visuels des notebooks :
+
+* `assets/diagrams/` : 20 schémas, chacun en `.excalidraw` (source modifiable sur [excalidraw.com](https://excalidraw.com)), `.svg` et `.png`. Les notebooks affichent les `.png`. Une couleur correspond à un rôle dans tous les schémas : violet pour le LLM, bleu pour ton code ou le serveur, vert pour les outils et les données, orange pour le client ou l'humain, rouge pour les contrôles et les risques.
+* `assets/icons/` : 24 icônes PNG utilisées dans les schémas.
+
+Les icônes viennent de [Flaticon](https://www.flaticon.com) (auteur Magnific). Leur licence gratuite exige une attribution : *Icons created by Magnific - Flaticon*. Détails dans `assets/LICENSES.md`.
 
 ## Anciennes versions
 
