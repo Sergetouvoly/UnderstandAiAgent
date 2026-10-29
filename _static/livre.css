@@ -1,0 +1,6 @@
+/* Images des schémas : jamais plus larges que l'écran (mobile compris) */
+img { max-width: 100%; height: auto; }
+/* Tableaux larges : défilement horizontal plutôt que débordement */
+.bd-article table { display: block; overflow-x: auto; }
+/* Longues lignes de code : défilement dans le bloc */
+.bd-article pre { overflow-x: auto; }

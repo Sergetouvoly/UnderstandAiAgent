@@ -1,0 +1,3 @@
+# Dépendances pour CONSTRUIRE le livre (pas pour exécuter les notebooks : voir requirements.txt)
+# Python 3.10 ou plus récent. Versions testées pour cette construction.
+jupyter-book==1.0.4.post1

@@ -1,0 +1,15 @@
+format: jb-book
+root: index
+parts:
+  - caption: Avant de commencer
+    chapters:
+      - file: demarrer
+  - caption: Les quatre notebooks
+    chapters:
+      - file: notebook_1_llm_et_memoire
+      - file: notebook_2_tool_calling_et_react
+      - file: notebook_3_rag_et_recherche_web
+      - file: notebook_4_mcp_multi_agents_securite
+  - caption: Annexes
+    chapters:
+      - file: credits
