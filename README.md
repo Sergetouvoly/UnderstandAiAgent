@@ -60,7 +60,7 @@ Le notebook 2 peut aussi tourner avec **Ollama** en local (`FOURNISSEUR = "ollam
 
 Le dossier `assets/` contient les visuels des notebooks :
 
-* `assets/diagrams/` : 30 schémas, chacun en `.excalidraw` (source modifiable sur [excalidraw.com](https://excalidraw.com)), `.svg` et `.png`. Les notebooks affichent les `.png`. Une couleur correspond à un rôle dans tous les schémas : violet pour le LLM, bleu pour ton code ou le serveur, vert pour les outils et les données, orange pour le client ou l'humain, rouge pour les contrôles et les risques.
+* `assets/diagrams/` : 39 schémas, chacun en `.excalidraw` (source modifiable sur [excalidraw.com](https://excalidraw.com)), `.svg` et `.png`. Les notebooks affichent les `.png`. Une couleur correspond à un rôle dans tous les schémas : violet pour le LLM, bleu pour ton code ou le serveur, vert pour les outils et les données, orange pour le client ou l'humain, rouge pour les contrôles et les risques.
 * `assets/icons/` : 24 icônes PNG utilisées dans les schémas.
 
 Les icônes viennent de [Flaticon](https://www.flaticon.com) (auteur Magnific). Leur licence gratuite exige une attribution : *Icons created by Magnific - Flaticon*. Détails dans `assets/LICENSES.md`.

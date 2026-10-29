@@ -39,4 +39,4 @@
 
 ## Schémas (`assets/diagrams/`)
 
-30 schémas créés pour cette formation avec [Excalidraw](https://github.com/excalidraw/excalidraw) (licence MIT) : fichiers `.excalidraw` (source), `.svg` et `.png` (exports). Les icônes qu'ils intègrent sont celles de `assets/icons/` : **toute publication d'un schéma doit conserver l'attribution Flaticon ci-dessus**. Le livre la reprend dans le pied de chaque page et dans cette page de crédits.
+39 schémas créés pour cette formation avec [Excalidraw](https://github.com/excalidraw/excalidraw) (licence MIT) : fichiers `.excalidraw` (source), `.svg` et `.png` (exports). Les icônes qu'ils intègrent sont celles de `assets/icons/` : **toute publication d'un schéma doit conserver l'attribution Flaticon ci-dessus**. Le livre la reprend dans le pied de chaque page et dans cette page de crédits.
