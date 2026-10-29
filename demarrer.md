@@ -6,6 +6,13 @@ Cette page décrit ce qu'il faut pour **exécuter** les notebooks chez toi. Pour
 
 Les notebooks et leurs schémas sont dans le dépôt du projet : [github.com/Sergetouvoly/UnderstandAiAgent](https://github.com/Sergetouvoly/UnderstandAiAgent).
 
+## Prérequis
+
+* **Python de base** : variables, fonctions, listes, dictionnaires, boucle `for`. Les notions plus avancées (`async`, classes Pydantic) sont expliquées là où elles apparaissent.
+* **Un compte OpenAI avec de quoi payer l'API** : une clé gratuite sans crédit ne suffit pas. Une exécution complète des quatre notebooks coûte quelques centimes.
+* **Facultatif** : [Ollama](https://ollama.com) pour comparer avec un petit modèle local au chapitre 2.
+* **Aucun prérequis** en IA ni en mathématiques.
+
 ## Installation
 
 1. **Python 3.10 ou plus récent**, puis dans un environnement virtuel :

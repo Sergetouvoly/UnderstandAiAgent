@@ -1,14 +1,16 @@
 # Formation « Comprendre et développer des agents IA spécialisés »
 # Python 3.10 ou plus récent
-openai>=1.60         # API OpenAI : chat, embeddings, sorties structurées, recherche web
+# Versions majeures bornées : la formation a été exécutée avec openai 3.x, langchain 1.4, langgraph 1.2, mcp 2.3,
+# pydantic 2.14, tiktoken 0.14. Une nouvelle version majeure peut casser les notebooks : relire alors le dépannage du README.
+openai>=1.60,<4         # API OpenAI : chat, embeddings, sorties structurées, recherche web
 python-dotenv        # lit la clé OPENAI_API_KEY dans .env
-pydantic>=2          # validation des données et sorties structurées (notebooks 1 à 4)
+pydantic>=2,<3          # validation des données et sorties structurées (notebooks 1 à 4)
 tiktoken             # démonstration des tokens (notebook 1)
 matplotlib           # graphiques des tokens (notebook 1)
 numpy                # calcul des similarités (notebook 3)
-langchain>=1.0       # create_agent et HumanInTheLoopMiddleware (notebooks 3 et 4)
+langchain>=1.0,<2       # create_agent et HumanInTheLoopMiddleware (notebooks 3 et 4)
 langchain-openai     # modèles OpenAI pour LangChain (notebooks 1 à 4)
-langgraph>=1.0       # agents et mémoire sous forme de graphe (notebooks 1, 2 et 4)
+langgraph>=1.0,<2       # agents et mémoire sous forme de graphe (notebooks 1, 2 et 4)
 mcp>=2,<3            # SDK officiel du Model Context Protocol, version 2 : MCPServer (notebook 4)
 jupyterlab>=4.1
 ipykernel

@@ -3,6 +3,7 @@
 
 title: Comprendre et développer des agents IA spécialisés
 author: Doudou Serge
+copyright: " Octobre 2026"
 
 # Les notebooks appellent l'API OpenAI : on affiche leurs sorties enregistrées,
 # on ne les réexécute jamais pendant la construction du livre.

@@ -60,7 +60,7 @@ Le notebook 2 peut aussi tourner avec **Ollama** en local (`FOURNISSEUR = "ollam
 
 Le dossier `assets/` contient les visuels des notebooks :
 
-* `assets/diagrams/` : 39 schémas, chacun en `.excalidraw` (source modifiable sur [excalidraw.com](https://excalidraw.com)), `.svg` et `.png`. Les notebooks affichent les `.png`. Une couleur correspond à un rôle dans tous les schémas : violet pour le LLM, bleu pour ton code ou le serveur, vert pour les outils et les données, orange pour le client ou l'humain, rouge pour les contrôles et les risques.
+* `assets/diagrams/` : 40 schémas, en `.svg` et `.png` (et en `.excalidraw`, source modifiable sur [excalidraw.com](https://excalidraw.com), pour la plupart). Les notebooks affichent les `.png`. Une couleur correspond à un rôle dans tous les schémas : violet pour le LLM, bleu pour ton code ou le serveur, vert pour les outils et les données, orange pour le client ou l'humain, rouge pour les contrôles et les risques.
 * `assets/icons/` : 24 icônes PNG utilisées dans les schémas.
 
 Les icônes viennent de [Flaticon](https://www.flaticon.com) (auteur Magnific). Leur licence gratuite exige une attribution : *Icons created by Magnific - Flaticon*. Détails dans `assets/LICENSES.md`.
@@ -68,3 +68,5 @@ Les icônes viennent de [Flaticon](https://www.flaticon.com) (auteur Magnific). 
 ## Anciennes versions
 
 Le dossier `ancien/` contient la version précédente de la formation (fil rouge « DocBot », support technique). Elle utilisait `utils.py`, `serveur_statut.py`, `docs/` et `data/`, qui sont rangés avec elle.
+
+Le dossier `secours/` contient une ancienne version de secours des notebooks, exécutée **sans modèle** (réponses scriptées marquées « simulation »). Elle n'est pas maintenue et ne correspond plus au fil rouge MégaShop. Comme `ancien/`, elle est ignorée par Git (voir `.gitignore`) et n'est pas publiée dans le livre.
