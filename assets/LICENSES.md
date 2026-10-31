@@ -39,4 +39,32 @@
 
 ## Schémas (`assets/diagrams/`)
 
-39 schémas créés pour cette formation avec [Excalidraw](https://github.com/excalidraw/excalidraw) (licence MIT) : fichiers `.excalidraw` (source), `.svg` et `.png` (exports). Les icônes qu'ils intègrent sont celles de `assets/icons/` : **toute publication d'un schéma doit conserver l'attribution Flaticon ci-dessus**. Le livre la reprend dans le pied de chaque page et dans cette page de crédits.
+58 schémas créés pour cette formation avec [Excalidraw](https://github.com/excalidraw/excalidraw) (licence MIT) : fichiers `.excalidraw` (source), `.svg` et `.png` (exports). Les icônes qu'ils intègrent sont celles de `assets/icons/` : **toute publication d'un schéma doit conserver l'attribution Flaticon ci-dessus**. Le livre la reprend dans le pied de chaque page et dans cette page de crédits.
+
+## Ressources du notebook 5 (`assets/nocode/`)
+
+Ces éléments appartiennent à leurs propriétaires. Ils sont reproduits **pour identifier et illustrer** les plateformes présentées ; les marques et logos restent la propriété de leurs titulaires.
+
+**Logos** (`assets/nocode/logos/`)
+
+| Fichier | Plateforme | Source |
+|---|---|---|
+| `n8n.png` | n8n | https://github.com/n8n-io/n8n (dossier `assets`) |
+| `dify.png`, `dify.svg` | Dify | https://github.com/langgenius/dify (dossier `web/public/logo`) |
+| `flowise.png` | FlowiseAI | https://github.com/FlowiseAI/Flowise (interface, dossier `packages/ui`) |
+| `voiceflow.svg` | Voiceflow | https://www.voiceflow.com/docs (en-tête de la documentation) |
+| `zapier.svg` | Zapier | https://zapier.com (en-tête du site) |
+
+**Captures d'écran** (`assets/nocode/captures/`)
+
+| Fichier | Source |
+|---|---|
+| `dify_*.png` | documentation officielle de Dify (https://docs.dify.ai) : tutoriel « Customer Service Bot With Knowledge Base », pages des nœuds LLM et HTTP Request, page « Handle Errors » |
+| `n8n_editeur.png` | dépôt public n8n-io/n8n (image du README) |
+| `flowise_editeur.png` | dépôt public FlowiseAI/Flowise (dossier `images`) |
+| `voiceflow_studio.png` | site officiel https://www.voiceflow.com |
+| `zapier_*.png` | blog officiel de Zapier, article « Zapier Agents is now AI by Zapier » (6 octobre 2026) : https://zapier.com/blog/zapier-agents-is-now-ai-by-zapier/ |
+
+**Pictogrammes des nœuds n8n** (`assets/nocode/n8n-noeuds/`) : issus du dépôt public https://github.com/n8n-io/n8n (bibliothèque de composants de l'éditeur, dossier `packages/frontend/@n8n/design-system`, et dossiers des nœuds `OpenAi`, `EmbeddingsOpenAI`). Ils servent à dessiner les canevas du chapitre, qui sont des **reconstitutions** et non des captures d'écran.
+
+**Données de la boutique** (`assets/nocode/donnees/`) : fichiers créés pour la formation à partir des notebooks 2 et 3 (catalogue, stock, livraison, documents, instructions d'Awa, jeu de test). Ils décrivent une boutique fictive.

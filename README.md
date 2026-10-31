@@ -1,15 +1,20 @@
 # Formation : comprendre et développer des agents IA spécialisés
 
-Quatre notebooks pour débutants, autour d'un même fil rouge : **MégaShop**, une boutique en ligne d'articles du quotidien (smartphones, écouteurs, baskets, vêtements, sacs), et **Léa**, son assistante IA. Léa gagne une compétence à chaque notebook.
+Cinq notebooks pour débutants, autour d'un même fil rouge : **Djassa**, une boutique en ligne ivoirienne d'articles du quotidien (smartphones, écouteurs, baskets, vêtements, sacs, prix en FCFA), et **Awa**, son assistante IA. Awa gagne une compétence à chaque notebook.
 
-| Notebook | Léa sait... | Notions |
+| Notebook | Awa sait... | Notions |
 |---|---|---|
 | `notebook_1_llm_et_memoire.ipynb` | **converser et se souvenir** | tokens, probabilités, température, rôles, historique, fenêtre glissante, résumé, profil client (Pydantic) |
 | `notebook_2_tool_calling_et_react.ipynb` | **agir** sur le catalogue | outils, tool calling, boucle ReAct, validation des arguments (Pydantic) |
 | `notebook_3_rag_et_recherche_web.ipynb` | **chercher** dans la documentation et sur le web | embeddings, découpage, index, RAG, réponse structurée, recherche web, routeur ou agent |
 | `notebook_4_mcp_multi_agents_securite.ipynb` | **travailler en équipe, en sécurité** | serveur et client MCP, coordinateur et spécialistes, injection de prompt, validation humaine, coûts, évaluation |
+| `notebook_5_agent_no_code_n8n_zapier.ipynb` | **se construire sans programmer** | no-code, n8n (AI Agent, Simple Memory, Data tables, Guardrails), workflows, déploiement sur le web et WhatsApp |
 
 Chaque notebook est **autonome** : les données, les outils et les fonctions d'affichage sont dans le notebook, il n'y a aucun fichier à importer. Chaque notion est montrée d'abord **en Python pur**, puis avec **LangChain ou LangGraph** dans une cellule séparée.
+
+## Référentiel du fil rouge
+
+Le catalogue, les prix en FCFA, les règles de livraison, de paiement et de retour, les clients et les identifiants de commande sont définis une seule fois dans [`REFERENTIEL_DJASSA.md`](REFERENTIEL_DJASSA.md). Ce sont des règles **fictives**, inventées pour les démonstrations.
 
 ## Livre en ligne
 
@@ -43,9 +48,9 @@ Le notebook 2 peut aussi tourner avec **Ollama** en local (`FOURNISSEUR = "ollam
 
 * **Coût** : une exécution complète des 4 notebooks coûte quelques centimes de dollar avec ces modèles.
 * **Les réponses varient** d'une exécution à l'autre : un LLM n'est pas déterministe. La recherche web du notebook 3 est réelle, donc ses résultats changent aussi.
-* **Notebook 4, injection de prompt** : la Léa « naïve » utilise volontairement `gpt-4.1-mini`, qui se fait piéger par l'avis truqué. `gpt-5-mini` y résiste plus souvent.
+* **Notebook 4, injection de prompt** : l'Awa « naïve » utilise volontairement `gpt-4.1-mini`, qui se fait piéger par l'avis truqué. `gpt-5-mini` y résiste plus souvent.
 * **Notebook 4, validation humaine** : un champ de saisie apparaît. Réponds `o` (oui) ou `n` (non), puis `Entrée`.
-* **Notebook 4, serveur MCP** : la cellule `%%writefile` crée le fichier `serveur_megashop.py` dans le dossier. Il est relancé automatiquement à chaque appel d'outil.
+* **Notebook 4, serveur MCP** : la cellule `%%writefile` crée le fichier `serveur_djassa.py` dans le dossier. Il est relancé automatiquement à chaque appel d'outil.
 
 ## Dépannage
 
@@ -60,8 +65,9 @@ Le notebook 2 peut aussi tourner avec **Ollama** en local (`FOURNISSEUR = "ollam
 
 Le dossier `assets/` contient les visuels des notebooks :
 
-* `assets/diagrams/` : 40 schémas, en `.svg` et `.png` (et en `.excalidraw`, source modifiable sur [excalidraw.com](https://excalidraw.com), pour la plupart). Les notebooks affichent les `.png`. Une couleur correspond à un rôle dans tous les schémas : violet pour le LLM, bleu pour ton code ou le serveur, vert pour les outils et les données, orange pour le client ou l'humain, rouge pour les contrôles et les risques.
+* `assets/diagrams/` : 58 schémas, en `.svg`, `.png` et `.excalidraw` (source modifiable sur [excalidraw.com](https://excalidraw.com) ; une douzaine de sources ont été reconstruites à partir de leur `.svg`). Les notebooks affichent les `.png`. Une couleur correspond à un rôle dans tous les schémas : violet pour le LLM, bleu pour ton code ou le serveur, vert pour les outils et les données, orange pour le client ou l'humain, rouge pour les contrôles et les risques.
 * `assets/icons/` : 24 icônes PNG utilisées dans les schémas.
+* `assets/nocode/` : ressources du notebook 5 (logos officiels des plateformes, captures de leurs documentations, pictogrammes des nœuds n8n, fichiers de données de la boutique à importer dans n8n).
 
 Les icônes viennent de [Flaticon](https://www.flaticon.com) (auteur Magnific). Leur licence gratuite exige une attribution : *Icons created by Magnific - Flaticon*. Détails dans `assets/LICENSES.md`.
 
@@ -69,4 +75,4 @@ Les icônes viennent de [Flaticon](https://www.flaticon.com) (auteur Magnific). 
 
 Le dossier `ancien/` contient la version précédente de la formation (fil rouge « DocBot », support technique). Elle utilisait `utils.py`, `serveur_statut.py`, `docs/` et `data/`, qui sont rangés avec elle.
 
-Le dossier `secours/` contient une ancienne version de secours des notebooks, exécutée **sans modèle** (réponses scriptées marquées « simulation »). Elle n'est pas maintenue et ne correspond plus au fil rouge MégaShop. Comme `ancien/`, elle est ignorée par Git (voir `.gitignore`) et n'est pas publiée dans le livre.
+Le dossier `secours/` contient une ancienne version de secours des notebooks, exécutée **sans modèle** (réponses scriptées marquées « simulation »). Elle n'est pas maintenue et ne correspond plus au fil rouge actuel (Djassa et Awa). Comme `ancien/`, elle est ignorée par Git (voir `.gitignore`) et n'est pas publiée dans le livre.

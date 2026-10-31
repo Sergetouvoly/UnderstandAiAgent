@@ -8,12 +8,13 @@ Il rassemble les ressources associées à la présentation : tu y retrouves les 
 
 **Pour qui ?** Pour toute personne qui débute avec les agents IA et connaît les bases de Python : variables, fonctions, listes, dictionnaires, boucle `for`. Aucune connaissance préalable en IA ni en mathématiques n'est nécessaire. Pour **lire** le livre, rien n'est à installer. Pour **exécuter** les notebooks, il faut une clé OpenAI (voir {doc}`demarrer`) ; les quatre notebooks coûtent quelques centimes.
 
-**À la fin des quatre chapitres, tu sauras :**
+**À la fin des cinq chapitres, tu sauras :**
 
 * expliquer pourquoi un LLM n'a pas de mémoire, et lui en donner une (historique, résumé, fiche client) ;
 * écrire toi-même la boucle d'un agent qui utilise des outils, et valider ce que le LLM te demande d'exécuter ;
 * faire répondre un LLM à partir de **tes** documents (RAG) ou du web, et le faire dire « je ne sais pas » quand il le faut ;
-* brancher des outils avec MCP, répartir le travail entre plusieurs agents, et protéger l'ensemble contre l'injection de prompt par des défenses empilées.
+* brancher des outils avec MCP, répartir le travail entre plusieurs agents, et protéger l'ensemble contre l'injection de prompt par des défenses empilées ;
+* reconstruire le même agent **sans programmer**, avec la plateforme no-code n8n, et savoir quand choisir le code ou le no-code.
 
 **Trois mots à ne pas confondre** (ils reviennent dans tout le livre) :
 
@@ -25,23 +26,24 @@ Il rassemble les ressources associées à la présentation : tu y retrouves les 
 
 Le mot « agent » n'apparaît donc qu'au chapitre 2 : le chapitre 1 pose ce qu'il faut comprendre avant (un LLM ne se souvient de rien).
 
-**Deux façons de parcourir le livre.** En **parcours complet**, tu lis les quatre chapitres dans l'ordre ; prévois environ une heure par chapitre en lecture, davantage si tu exécutes les cellules (estimation indicative). En **première lecture rapide**, tu peux sauter les sections « Avec LangChain » et « Avec LangGraph » : le code en Python pur contient déjà tout le mécanisme, et les frameworks ne font que l'automatiser. Chaque chapitre est autonome, mais les chapitres 3 et 4 reprennent la boucle d'agent du chapitre 2.
+**Deux façons de parcourir le livre.** En **parcours complet**, tu lis les cinq chapitres dans l'ordre ; prévois environ une heure par chapitre en lecture, davantage si tu exécutes les cellules (estimation indicative). En **première lecture rapide**, tu peux sauter les sections « Avec LangChain » et « Avec LangGraph » : le code en Python pur contient déjà tout le mécanisme, et les frameworks ne font que l'automatiser. Chaque chapitre est autonome, mais les chapitres 3 et 4 reprennent la boucle d'agent du chapitre 2.
 
-## Le fil rouge : MégaShop et Léa
+## Le fil rouge : Djassa et Awa
 
-Les quatre chapitres suivent la même histoire. **MégaShop** est une boutique en ligne d'articles du quotidien. **Léa**, son assistante IA, gagne une compétence à chaque chapitre. Chaque notion est montrée d'abord **en Python pur**, puis avec **LangChain ou LangGraph**.
+Les cinq chapitres suivent la même histoire. **Djassa** est une boutique en ligne ivoirienne d'articles du quotidien (smartphones, écouteurs, baskets, vêtements, sacs) : les prix sont en FCFA, la livraison se fait à Abidjan et dans quelques villes du pays. **Awa**, son assistante IA, gagne une compétence à chaque chapitre. Chaque notion est montrée d'abord **en Python pur**, puis avec **LangChain ou LangGraph**.
 
 ```{image} assets/diagrams/nb2_parcours_agent.png
 :alt: De l'assistant à l'agent : outils, tool calling, boucle ReAct et validation
 :width: 100%
 ```
 
-| Chapitre | Léa sait... | Notions |
+| Chapitre | Awa sait... | Notions |
 |---|---|---|
 | {doc}`Notebook 1 <notebook_1_llm_et_memoire>` | **converser et se souvenir** | tokens, rôles, historique, fenêtre glissante, résumé, profil client |
 | {doc}`Notebook 2 <notebook_2_tool_calling_et_react>` | **agir** sur le catalogue | outils, tool calling, boucle ReAct, validation des arguments |
 | {doc}`Notebook 3 <notebook_3_rag_et_recherche_web>` | **chercher** dans les documents et sur le web | embeddings, RAG, réponse structurée, recherche web |
 | {doc}`Notebook 4 <notebook_4_mcp_multi_agents_securite>` | **travailler en équipe, en sécurité** | MCP, multi-agents, injection de prompt, validation humaine, coûts |
+| {doc}`Notebook 5 <notebook_5_agent_no_code_n8n_zapier>` | **se construire sans programmer** | no-code, n8n, briques préconstruites, workflows, déploiement WhatsApp |
 
 ## Comment utiliser ce livre
 

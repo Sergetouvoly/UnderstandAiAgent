@@ -9,7 +9,7 @@ Les notebooks et leurs schémas sont dans le dépôt du projet : [github.com/Ser
 ## Prérequis
 
 * **Python de base** : variables, fonctions, listes, dictionnaires, boucle `for`. Les notions plus avancées (`async`, classes Pydantic) sont expliquées là où elles apparaissent.
-* **Un compte OpenAI avec de quoi payer l'API** : une clé gratuite sans crédit ne suffit pas. Une exécution complète des quatre notebooks coûte quelques centimes.
+* **Un compte OpenAI avec de quoi payer l'API** : une clé gratuite sans crédit ne suffit pas. Une exécution complète des quatre premiers notebooks coûte quelques centimes. Le notebook 5 est un guide à suivre dans n8n : il ne contient aucun code à exécuter.
 * **Facultatif** : [Ollama](https://ollama.com) pour comparer avec un petit modèle local au chapitre 2.
 * **Aucun prérequis** en IA ni en mathématiques.
 
@@ -45,9 +45,9 @@ Le notebook 2 peut aussi tourner avec **Ollama** en local (`FOURNISSEUR = "ollam
 
 * **Coût** : une exécution complète des 4 notebooks coûte quelques centimes de dollar avec ces modèles.
 * **Les réponses varient** d'une exécution à l'autre. La recherche web du notebook 3 est réelle, donc ses résultats changent aussi.
-* **Notebook 4, injection de prompt** : la Léa « naïve » utilise volontairement `gpt-4.1-mini`, qui se fait piéger par l'avis truqué. `gpt-5-mini` y résiste plus souvent.
+* **Notebook 4, injection de prompt** : l'Awa « naïve » utilise volontairement `gpt-4.1-mini`, qui se fait piéger par l'avis truqué. `gpt-5-mini` y résiste plus souvent.
 * **Notebook 4, validation humaine** : un champ de saisie apparaît. Réponds `o` (oui) ou `n` (non), puis `Entrée`.
-* **Notebook 4, serveur MCP** : la cellule `%%writefile` crée le fichier `serveur_megashop.py` dans le dossier. Il est relancé automatiquement à chaque appel d'outil.
+* **Notebook 4, serveur MCP** : la cellule `%%writefile` crée le fichier `serveur_djassa.py` dans le dossier. Il est relancé automatiquement à chaque appel d'outil.
 
 ## Dépannage
 

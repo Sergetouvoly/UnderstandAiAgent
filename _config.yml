@@ -19,8 +19,10 @@ exclude_patterns:
   - ".claude/**"
   - ".github/**"
   - "assets/*.md"
+  - "assets/nocode/donnees/**"
   - "README.md"
   - "PUBLIER.md"
+  - "REFERENTIEL_DJASSA.md"
   - "**/.ipynb_checkpoints/**"
 
 repository:
@@ -46,9 +48,12 @@ parse:
     - substitution
 
 sphinx:
+  extra_extensions:
+    - sphinxcontrib.mermaid
   local_extensions:
     copier_assets: _ext
   config:
+    myst_fence_as_directive: ["mermaid"]
     html_js_files:
       - https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js
     html_static_path: ["_static"]
