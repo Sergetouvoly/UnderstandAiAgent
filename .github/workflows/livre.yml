@@ -1,10 +1,10 @@
-# Construit le livre et le publie sur GitHub Pages à chaque push sur main.
+# Construit le livre et le publie sur GitHub Pages à chaque push sur SA2L.
 # Réglage unique à faire dans le dépôt : Settings > Pages > Source = « GitHub Actions ».
 name: Livre
 
 on:
   push:
-    branches: [main]
+    branches: [SA2L]
   workflow_dispatch:
 
 permissions:
