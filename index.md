@@ -1,35 +1,16 @@
 # Comprendre et développer des agents IA spécialisés
 
-Ce livre est le support de la présentation **« Comprendre et développer des agents IA spécialisés »**, donnée par **Doudou Serge**.
+Support de la présentation **« Comprendre et développer des agents IA spécialisés »**, donnée par **Doudou Serge**. Le livre rassemble les concepts abordés, le code des démonstrations et leurs résultats, de façon à pouvoir les relire ou les reproduire.
 
-Il rassemble les ressources associées à la présentation : tu y retrouves les concepts abordés, tu consultes les exemples de code avec leurs résultats, et tu peux reproduire toutes les démonstrations chez toi.
+## Le propos
 
-## Pour qui, et ce que tu sauras faire
+Un modèle de langage sait écrire, mais il ne connaît ni votre boutique, ni l'état de vos stocks, ni les règles de votre service client, et il ne se souvient de rien d'un message à l'autre. Un **agent** est ce qu'on construit autour du modèle pour combler ces manques : de la mémoire, des outils, des documents, des garde-fous. Le livre suit cette construction pas à pas, sur un cas concret, en gardant à chaque étape deux questions en tête : que fait le modèle, et que fait le code qui l'entoure ?
 
-**Pour qui ?** Pour toute personne qui débute avec les agents IA et connaît les bases de Python : variables, fonctions, listes, dictionnaires, boucle `for`. Aucune connaissance préalable en IA ni en mathématiques n'est nécessaire. Pour **lire** le livre, rien n'est à installer. Pour **exécuter** les notebooks, il faut une clé OpenAI (voir {doc}`demarrer`) ; les quatre notebooks coûtent quelques centimes.
-
-**À la fin des quatre chapitres, tu sauras :**
-
-* expliquer pourquoi un LLM n'a pas de mémoire, et lui en donner une (historique, résumé, fiche client) ;
-* écrire toi-même la boucle d'un agent qui utilise des outils, et valider ce que le LLM te demande d'exécuter ;
-* faire répondre un LLM à partir de **tes** documents (RAG) ou du web, et le faire dire « je ne sais pas » quand il le faut ;
-* brancher des outils avec MCP, répartir le travail entre plusieurs agents, et protéger l'ensemble contre l'injection de prompt par des défenses empilées ;
-
-**Trois mots à ne pas confondre** (ils reviennent dans tout le livre) :
-
-| Mot | Qui décide de la suite ? | Où le voir |
-|---|---|---|
-| **LLM seul** | Personne : il prédit du texte, sans mémoire ni accès à tes données | chapitre 1 |
-| **Workflow** | Ton code, avec des étapes ou des règles fixées à l'avance (par exemple un routeur à mots-clés) | chapitre 3, étape 9 |
-| **Agent** | Le LLM lui-même, dans une boucle où il choisit l'outil suivant ou s'arrête | chapitre 2, étape 5 |
-
-Le mot « agent » n'apparaît donc qu'au chapitre 2 : le chapitre 1 pose ce qu'il faut comprendre avant (un LLM ne se souvient de rien).
-
-**Deux façons de parcourir le livre.** En **parcours complet**, tu lis les quatre chapitres dans l'ordre ; prévois environ une heure par chapitre en lecture, davantage si tu exécutes les cellules (estimation indicative). En **première lecture rapide**, tu peux sauter les sections « Avec LangChain » et « Avec LangGraph » : le code en Python pur contient déjà tout le mécanisme, et les frameworks ne font que l'automatiser. Chaque chapitre est autonome, mais les chapitres 3 et 4 reprennent la boucle d'agent du chapitre 2.
+Il suppose une aisance de base en Python (fonctions, listes, dictionnaires, boucles) ; les notions plus avancées, comme `async` ou les classes Pydantic, sont présentées là où elles servent. Aucune connaissance préalable en IA ou en mathématiques n'est requise. Lire le livre n'exige aucune installation ; exécuter les notebooks demande une clé OpenAI (voir {doc}`demarrer`), pour un coût de quelques centimes.
 
 ## Le fil rouge : Djassa et Awa
 
-Les quatre chapitres suivent la même histoire. **Djassa** est une boutique en ligne ivoirienne d'articles du quotidien (smartphones, écouteurs, baskets, vêtements, sacs) : les prix sont en FCFA, la livraison se fait à Abidjan et dans quelques villes du pays. **Awa**, son assistante IA, gagne une compétence à chaque chapitre. Chaque notion est montrée d'abord **en Python pur**, puis avec **LangChain ou LangGraph**.
+**Djassa** est une boutique en ligne ivoirienne d'articles du quotidien (smartphones, écouteurs, baskets, vêtements, sacs). Les prix sont en FCFA, la livraison couvre Abidjan et quelques villes du pays. **Awa**, son assistante, gagne une compétence à chaque chapitre. Chaque notion est écrite d'abord **en Python pur**, pour que le mécanisme reste visible, puis reprise avec **LangChain ou LangGraph**, pour voir ce que ces bibliothèques automatisent.
 
 ```{image} assets/diagrams/nb2_parcours_agent.png
 :alt: De l'assistant à l'agent : outils, tool calling, boucle ReAct et validation
@@ -43,11 +24,19 @@ Les quatre chapitres suivent la même histoire. **Djassa** est une boutique en l
 | {doc}`Notebook 3 <notebook_3_rag_et_recherche_web>` | **chercher** dans les documents et sur le web | embeddings, RAG, réponse structurée, recherche web |
 | {doc}`Notebook 4 <notebook_4_mcp_multi_agents_securite>` | **travailler en équipe, en sécurité** | MCP, multi-agents, injection de prompt, validation humaine, coûts |
 
-## Comment utiliser ce livre
+## Trois termes à distinguer
 
-* **Pendant la présentation** : suis le chapitre en cours. Le code et ses résultats sont au centre, les explications sont courtes et placées juste avant.
-* **Après la présentation** : relis à ton rythme. Les sorties affichées sont celles d'une vraie exécution ; tes propres réponses pourront différer, car un LLM n'est pas déterministe.
-* **Pour reproduire** : la page {doc}`demarrer` explique l'installation, la clé OpenAI et le lancement des notebooks. Chaque chapitre peut être téléchargé en `.ipynb` avec le bouton de téléchargement en haut de la page.
+Le vocabulaire de l'IA appliquée est flou ; celui-ci est employé dans un sens précis tout au long du livre.
+
+| Terme | Qui décide de la suite ? | Où le voir |
+|---|---|---|
+| **LLM seul** | Personne : il prédit du texte, sans mémoire ni accès aux données | chapitre 1 |
+| **Workflow** | Le code, selon des étapes ou des règles fixées à l'avance (un routeur à mots-clés, par exemple) | chapitre 3, étape 9 |
+| **Agent** | Le LLM lui-même, dans une boucle où il choisit l'outil suivant ou s'arrête | chapitre 2, étape 5 |
+
+## Parcourir le livre
+
+Les chapitres se lisent dans l'ordre : les chapitres 3 et 4 reprennent la boucle d'agent du chapitre 2, elle-même construite sur la mémoire du chapitre 1. Les sections « Avec LangChain » et « Avec LangGraph » sont des variantes : le code en Python pur contient déjà tout le mécanisme, et elles peuvent être sautées lors d'une première lecture. Les sorties affichées proviennent d'une vraie exécution ; les vôtres pourront différer, un LLM n'étant pas déterministe. Chaque chapitre se télécharge en `.ipynb` depuis le bouton en haut de page.
 
 ```{tableofcontents}
 ```

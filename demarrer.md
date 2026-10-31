@@ -1,6 +1,6 @@
 # Démarrer
 
-Cette page décrit ce qu'il faut pour **exécuter** les notebooks chez toi. Pour simplement lire le livre, rien n'est à installer.
+Cette page décrit ce qu'il faut pour **exécuter** les notebooks. Lire le livre n'exige aucune installation.
 
 ## Récupérer les notebooks
 
@@ -8,10 +8,9 @@ Les notebooks et leurs schémas sont dans le dépôt du projet : [github.com/Ser
 
 ## Prérequis
 
-* **Python de base** : variables, fonctions, listes, dictionnaires, boucle `for`. Les notions plus avancées (`async`, classes Pydantic) sont expliquées là où elles apparaissent.
-* **Un compte OpenAI avec de quoi payer l'API** : une clé gratuite sans crédit ne suffit pas. Une exécution complète des quatre notebooks coûte quelques centimes.
+* **Python de base** : fonctions, listes, dictionnaires, boucles. Les notions plus avancées (`async`, classes Pydantic) sont présentées là où elles servent.
+* **Un compte OpenAI avec de quoi payer l'API** : une clé sans crédit ne suffit pas. Une exécution complète des quatre notebooks coûte quelques centimes.
 * **Facultatif** : [Ollama](https://ollama.com) pour comparer avec un petit modèle local au chapitre 2.
-* **Aucun prérequis** en IA ni en mathématiques.
 
 ## Installation
 
