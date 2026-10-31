@@ -8,7 +8,7 @@ import shutil
 from pathlib import Path
 
 DOSSIERS = ("assets",)
-SUFFIXES = {".png", ".svg"}  # les sources .excalidraw restent dans le dépôt
+SUFFIXES = {".png", ".svg", ".csv", ".md", ".txt"}  # les sources .excalidraw restent dans le dépôt
 
 
 def copier(app, exception):

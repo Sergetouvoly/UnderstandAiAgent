@@ -13,7 +13,7 @@ Il rassemble les ressources associées à la présentation : tu y retrouves les 
 * expliquer pourquoi un LLM n'a pas de mémoire, et lui en donner une (historique, résumé, fiche client) ;
 * écrire toi-même la boucle d'un agent qui utilise des outils, et valider ce que le LLM te demande d'exécuter ;
 * faire répondre un LLM à partir de **tes** documents (RAG) ou du web, et le faire dire « je ne sais pas » quand il le faut ;
-* brancher des outils avec MCP, répartir le travail entre plusieurs agents, et protéger l'ensemble contre l'injection de prompt par des défenses empilées.
+* brancher des outils avec MCP, répartir le travail entre plusieurs agents, et protéger l'ensemble contre l'injection de prompt par des défenses empilées ;
 
 **Trois mots à ne pas confondre** (ils reviennent dans tout le livre) :
 
@@ -27,16 +27,16 @@ Le mot « agent » n'apparaît donc qu'au chapitre 2 : le chapitre 1 pose ce qu'
 
 **Deux façons de parcourir le livre.** En **parcours complet**, tu lis les quatre chapitres dans l'ordre ; prévois environ une heure par chapitre en lecture, davantage si tu exécutes les cellules (estimation indicative). En **première lecture rapide**, tu peux sauter les sections « Avec LangChain » et « Avec LangGraph » : le code en Python pur contient déjà tout le mécanisme, et les frameworks ne font que l'automatiser. Chaque chapitre est autonome, mais les chapitres 3 et 4 reprennent la boucle d'agent du chapitre 2.
 
-## Le fil rouge : MégaShop et Léa
+## Le fil rouge : Djassa et Awa
 
-Les quatre chapitres suivent la même histoire. **MégaShop** est une boutique en ligne d'articles du quotidien. **Léa**, son assistante IA, gagne une compétence à chaque chapitre. Chaque notion est montrée d'abord **en Python pur**, puis avec **LangChain ou LangGraph**.
+Les quatre chapitres suivent la même histoire. **Djassa** est une boutique en ligne ivoirienne d'articles du quotidien (smartphones, écouteurs, baskets, vêtements, sacs) : les prix sont en FCFA, la livraison se fait à Abidjan et dans quelques villes du pays. **Awa**, son assistante IA, gagne une compétence à chaque chapitre. Chaque notion est montrée d'abord **en Python pur**, puis avec **LangChain ou LangGraph**.
 
 ```{image} assets/diagrams/nb2_parcours_agent.png
 :alt: De l'assistant à l'agent : outils, tool calling, boucle ReAct et validation
 :width: 100%
 ```
 
-| Chapitre | Léa sait... | Notions |
+| Chapitre | Awa sait... | Notions |
 |---|---|---|
 | {doc}`Notebook 1 <notebook_1_llm_et_memoire>` | **converser et se souvenir** | tokens, rôles, historique, fenêtre glissante, résumé, profil client |
 | {doc}`Notebook 2 <notebook_2_tool_calling_et_react>` | **agir** sur le catalogue | outils, tool calling, boucle ReAct, validation des arguments |

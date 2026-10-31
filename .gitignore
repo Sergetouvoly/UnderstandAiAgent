@@ -12,10 +12,10 @@ ancien/
 secours/
 
 # Généré par le notebook 4 (cellule %%writefile)
-serveur_megashop.py
+serveur_djassa.py
 
 # Journal d'audit généré par le notebook 4
-journal_megashop.jsonl
+journal_djassa.jsonl
 
 # Livre Jupyter Book
 _build/

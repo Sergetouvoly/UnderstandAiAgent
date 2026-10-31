@@ -45,9 +45,9 @@ Le notebook 2 peut aussi tourner avec **Ollama** en local (`FOURNISSEUR = "ollam
 
 * **Coût** : une exécution complète des 4 notebooks coûte quelques centimes de dollar avec ces modèles.
 * **Les réponses varient** d'une exécution à l'autre. La recherche web du notebook 3 est réelle, donc ses résultats changent aussi.
-* **Notebook 4, injection de prompt** : la Léa « naïve » utilise volontairement `gpt-4.1-mini`, qui se fait piéger par l'avis truqué. `gpt-5-mini` y résiste plus souvent.
+* **Notebook 4, injection de prompt** : l'Awa « naïve » utilise volontairement `gpt-4.1-mini`, qui se fait piéger par l'avis truqué. `gpt-5-mini` y résiste plus souvent.
 * **Notebook 4, validation humaine** : un champ de saisie apparaît. Réponds `o` (oui) ou `n` (non), puis `Entrée`.
-* **Notebook 4, serveur MCP** : la cellule `%%writefile` crée le fichier `serveur_megashop.py` dans le dossier. Il est relancé automatiquement à chaque appel d'outil.
+* **Notebook 4, serveur MCP** : la cellule `%%writefile` crée le fichier `serveur_djassa.py` dans le dossier. Il est relancé automatiquement à chaque appel d'outil.
 
 ## Dépannage
 
