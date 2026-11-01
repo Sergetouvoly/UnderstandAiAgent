@@ -19,6 +19,8 @@ exclude_patterns:
   - ".claude/**"
   - ".github/**"
   - "assets/*.md"
+  - "assets/nocode/donnees/*.md"
+  - "assets/nocode/donnees/documents/*.md"
   - "README.md"
   - "PUBLIER.md"
   - "REFERENTIEL_DJASSA.md"
