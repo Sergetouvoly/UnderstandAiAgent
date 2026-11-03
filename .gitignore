@@ -16,6 +16,7 @@ serveur_djassa.py
 
 # Journal d'audit généré par le notebook 4
 journal_djassa.jsonl
+journal_djassa_langgraph.jsonl
 
 # Livre Jupyter Book
 _build/
